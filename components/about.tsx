@@ -6,7 +6,7 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 
 const features = [
-  "Mais de 10 anos de experiência no mercado",
+  "Anos de experiência no mercado",
   "Preços justos e competitivos",
   "Atendimento rápido e profissional",
   "Compromisso com a sustentabilidade",

@@ -1,16 +1,25 @@
-"use client"
+"use client";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Recycle, Truck, Cpu, Armchair, Wind, Droplet, Package, Home } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Recycle,
+  Truck,
+  Cpu,
+  Armchair,
+  Wind,
+  Droplet,
+  Package,
+  Home,
+} from "lucide-react";
 
 export function Services() {
   const scrollToContact = () => {
-    const element = document.getElementById("contato")
+    const element = document.getElementById("contato");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   const mainServices = [
     {
@@ -37,14 +46,16 @@ export function Services() {
         { icon: Truck, name: "Transporte" },
       ],
     },
-  ]
+  ];
 
   return (
     <section id="servicos" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Nossos Serviços</h3>
+          <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+            Nossos Serviços
+          </h3>
           <h2 className="text-4xl md:text-5xl font-bold text-dark mb-6 leading-tight">
             Soluções completas para suas necessidades
           </h2>
@@ -56,25 +67,40 @@ export function Services() {
         {/* Main Services */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {mainServices.map((service, index) => (
-            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card
+              key={index}
+              className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-dark mb-4">{service.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
+                <h3 className="text-2xl font-bold text-dark mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {service.description}
+                </p>
 
                 {/* Materials Grid */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   {service.materials.map((material, idx) => (
-                    <div key={idx} className="flex items-center gap-3 p-3 bg-muted rounded-lg">
+                    <div
+                      key={idx}
+                      className="flex items-center gap-3 p-3 bg-muted rounded-lg"
+                    >
                       <material.icon className="w-5 h-5 text-primary" />
-                      <span className="text-sm font-medium text-dark">{material.name}</span>
+                      <span className="text-sm font-medium text-dark">
+                        {material.name}
+                      </span>
                     </div>
                   ))}
                 </div>
 
-                <Button onClick={scrollToContact} className="w-full bg-dark hover:bg-dark/90 text-white">
+                <Button
+                  onClick={scrollToContact}
+                  className="w-full bg-dark hover:bg-dark/90 text-white"
+                >
                   Solicitar Orçamento
                 </Button>
               </CardContent>
@@ -84,9 +110,12 @@ export function Services() {
 
         {/* CTA Section */}
         <div className="bg-dark rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Pronto para fazer negócio?</h3>
-          <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
-            Entre em contato conosco e receba uma avaliação gratuita. Estamos prontos para atender você!
+          <h3 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
+            Pronto para fazer negócio?
+          </h3>
+          <p className="text-gray-500 text-lg mb-6 max-w-2xl mx-auto">
+            Entre em contato conosco e receba uma avaliação gratuita. Estamos
+            prontos para atender você!
           </p>
           <Button
             onClick={scrollToContact}
@@ -98,5 +127,5 @@ export function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }
