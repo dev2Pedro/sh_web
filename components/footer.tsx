@@ -1,14 +1,22 @@
-"use client"
+"use client";
 
-import { Recycle, Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import {
+  Recycle,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export function Footer() {
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
+    const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <footer className="bg-dark text-white">
@@ -21,12 +29,15 @@ export function Footer() {
                 <Recycle className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold leading-tight">Sucatinha da Hora</h3>
+                <h3 className="text-xl font-bold leading-tight">
+                  Sucatinha da Hora
+                </h3>
                 <p className="text-sm text-gray-400">SH</p>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Transformando materiais usados em oportunidades. Sustentabilidade e eficiência em cada negócio.
+              Transformando materiais usados em oportunidades. Sustentabilidade
+              e eficiência em cada negócio.
             </p>
             <div className="flex gap-4">
               <a
@@ -115,8 +126,11 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Telefone</p>
-                  <a href="tel:+5511987654321" className="text-white hover:text-primary transition-colors">
-                    (11) 98765-4321
+                  <a
+                    href="tel:+5586988175867"
+                    className="text-gray-800 hover:text-primary transition-colors"
+                  >
+                    (86) 98817-5867
                   </a>
                 </div>
               </li>
@@ -126,7 +140,7 @@ export function Footer() {
                   <p className="text-gray-400 text-sm mb-1">E-mail</p>
                   <a
                     href="mailto:contato@sucatinhadahora.com.br"
-                    className="text-white hover:text-primary transition-colors break-all"
+                    className="text-gray-800 hover:text-primary transition-colors break-all"
                   >
                     contato@sucatinhadahora.com.br
                   </a>
@@ -136,10 +150,10 @@ export function Footer() {
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Endereço</p>
-                  <p className="text-white">
-                    Rua das Indústrias, 123
+                  <p className="text-gray-800">
+                    R. Barbacena, 6207 - Uruguai - 64073-370
                     <br />
-                    São Paulo, SP
+                    Teresina - PI
                   </p>
                 </div>
               </li>
@@ -151,13 +165,20 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Sucatinha da Hora SH. Todos os direitos reservados.
+              © {new Date().getFullYear()} Sucatinha da Hora SH. Todos os
+              direitos reservados.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
                 Política de Privacidade
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
                 Termos de Uso
               </a>
             </div>
@@ -165,5 +186,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

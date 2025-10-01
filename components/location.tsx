@@ -13,7 +13,7 @@ export function Location() {
             Venha nos visitar
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Estamos localizados em TEresina - PI, prontos para atender você
+            Estamos localizados em Teresina - PI, prontos para atender você
           </p>
         </div>
 
