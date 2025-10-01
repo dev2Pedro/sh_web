@@ -28,7 +28,7 @@ export function Footer() {
                 <Recycle className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold leading-tight">
+                <h3 className="text-xl font-bold leading-tight text-gray-800">
                   Sucatinha da Hora
                 </h3>
                 <p className="text-sm text-gray-400">SH</p>
@@ -67,12 +67,14 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-6">Links Rápidos</h4>
+            <h4 className="text-lg font-semibold mb-6 text-gray-800">
+              Links Rápidos
+            </h4>
             <ul className="space-y-3">
               <li>
                 <button
                   onClick={() => scrollToSection("inicio")}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
                 >
                   Início
                 </button>
@@ -80,7 +82,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("sobre")}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
                 >
                   Sobre Nós
                 </button>
@@ -88,7 +90,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("servicos")}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
                 >
                   Serviços
                 </button>
@@ -96,7 +98,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("contato")}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
                 >
                   Contato
                 </button>
@@ -105,7 +107,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-6">Nossos Serviços</h4>
+            <h4 className="text-lg font-semibold mb-6 text-gray-800">
+              Nossos Serviços
+            </h4>
             <ul className="space-y-3 text-gray-400">
               <li>Compra de Sucatas Metálicas</li>
               <li>Venda de Materiais Reciclados</li>

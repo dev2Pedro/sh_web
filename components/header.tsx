@@ -47,25 +47,25 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-sm font-medium text-dark hover:text-primary transition-colors"
+              className="text-sm font-medium text-dark hover:text-primary transition-colors cursor-pointer"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection("sobre")}
-              className="text-sm font-medium text-dark hover:text-primary transition-colors"
+              className="text-sm font-medium text-dark hover:text-primary transition-colors cursor-pointer"
             >
               Sobre Nós
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
-              className="text-sm font-medium text-dark hover:text-primary transition-colors"
+              className="text-sm font-medium text-dark hover:text-primary transition-colors cursor-pointer"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-sm font-medium text-dark hover:text-primary transition-colors"
+              className="text-sm font-medium text-dark hover:text-primary transition-colors cursor-pointer"
             >
               Contato
             </button>
@@ -74,7 +74,7 @@ export function Header() {
           <div className="hidden md:block">
             <Button
               onClick={() => scrollToSection("contato")}
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="bg-primary hover:bg-primary/90 text-white cursor-pointer"
             >
               Solicitar Orçamento
             </Button>

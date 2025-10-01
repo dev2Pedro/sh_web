@@ -40,7 +40,7 @@ export function Hero() {
             <Button
               onClick={() => scrollToSection("contato")}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 group"
+              className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 group cursor-pointer"
             >
               Fale Conosco
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -49,7 +49,7 @@ export function Hero() {
               onClick={() => scrollToSection("servicos")}
               size="lg"
               variant="outline"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark text-lg px-8 py-6"
+              className="bg-transparent border-2 text-white hover:bg-green-700 hover:text-white text-lg px-8 py-6 cursor-pointer"
             >
               Nossos Serviços
             </Button>

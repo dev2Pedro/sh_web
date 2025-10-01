@@ -202,7 +202,7 @@ export function Contact() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-primary hover:bg-primary/90 text-white h-12 text-lg"
+                    className="w-full bg-primary hover:bg-primary/90 text-white h-12 text-lg cursor-pointer"
                   >
                     {isSubmitting ? (
                       "Enviando..."

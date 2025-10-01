@@ -116,7 +116,7 @@ export function Services() {
           <Button
             onClick={scrollToContact}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-white text-lg px-8"
+            className="bg-primary hover:bg-primary/90 text-white text-lg px-8 cursor-pointer"
           >
             Fale Conosco Agora
           </Button>
