@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X, Recycle } from "lucide-react"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Recycle } from "lucide-react";
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
+    const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setIsMobileMenuOpen(false)
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false);
     }
-  }
+  };
 
   return (
     <header
@@ -32,18 +32,18 @@ export function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
               <Recycle className="w-7 h-7 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-dark leading-tight">Sucatinha da Hora</h1>
+              <h1 className="text-xl font-bold text-dark leading-tight">
+                Sucatinha da Hora
+              </h1>
               <p className="text-xs text-muted-foreground">SH</p>
             </div>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("inicio")}
@@ -71,20 +71,23 @@ export function Header() {
             </button>
           </nav>
 
-          {/* CTA Button */}
           <div className="hidden md:block">
-            <Button onClick={() => scrollToSection("contato")} className="bg-primary hover:bg-primary/90 text-white">
+            <Button
+              onClick={() => scrollToSection("contato")}
+              className="bg-primary hover:bg-primary/90 text-white"
+            >
               Solicitar Orçamento
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden text-dark">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-dark"
+          >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border bg-white">
             <nav className="flex flex-col gap-4">
@@ -123,5 +126,5 @@ export function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

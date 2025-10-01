@@ -51,7 +51,6 @@ export function Services() {
   return (
     <section id="servicos" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
             Nossos Serviços
@@ -64,7 +63,6 @@ export function Services() {
           </p>
         </div>
 
-        {/* Main Services */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {mainServices.map((service, index) => (
             <Card
@@ -82,7 +80,6 @@ export function Services() {
                   {service.description}
                 </p>
 
-                {/* Materials Grid */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   {service.materials.map((material, idx) => (
                     <div
@@ -108,7 +105,6 @@ export function Services() {
           ))}
         </div>
 
-        {/* CTA Section */}
         <div className="bg-dark rounded-2xl p-8 md:p-12 text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
             Pronto para fazer negócio?

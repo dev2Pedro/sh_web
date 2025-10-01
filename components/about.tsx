@@ -36,7 +36,6 @@ export function About() {
     <section id="sobre" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Carousel */}
           <div className="relative">
             <div
               className="overflow-hidden rounded-2xl shadow-2xl"
@@ -57,7 +56,6 @@ export function About() {
               </div>
             </div>
 
-            {/* Buttons */}
             <button
               onClick={scrollPrev}
               className="absolute top-1/2 -left-4 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
@@ -74,7 +72,6 @@ export function About() {
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-2xl -z-10" />
           </div>
 
-          {/* Content */}
           <div>
             <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
               Sobre Nós

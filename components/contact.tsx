@@ -23,7 +23,6 @@ export function Contact() {
           title: "Mensagem enviada!",
           description: "Entraremos em contato em breve.",
         });
-        // Reset form
         const form = document.getElementById("contact-form") as HTMLFormElement;
         form?.reset();
       } else {
@@ -68,7 +67,6 @@ export function Contact() {
   return (
     <section id="contato" className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
             Entre em Contato
@@ -82,7 +80,6 @@ export function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Contact Info */}
           <div className="space-y-6">
             {contactInfo.map((info, index) => (
               <Card key={index} className="border-0 shadow-md">
@@ -107,7 +104,6 @@ export function Contact() {
               </Card>
             ))}
 
-            {/* Business Hours */}
             <Card className="border-0 shadow-md bg-dark text-white">
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-4 text-gray-900">
@@ -131,11 +127,16 @@ export function Contact() {
             </Card>
           </div>
 
-          {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
-                <form id="contact-form" action={handleSubmit}>
+                <form
+                  id="contact-form"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    handleSubmit(new FormData(e.currentTarget));
+                  }}
+                >
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Nome Completo</Label>

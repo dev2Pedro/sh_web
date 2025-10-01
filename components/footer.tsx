@@ -22,7 +22,6 @@ export function Footer() {
     <footer className="bg-dark text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
@@ -67,7 +66,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Links Rápidos</h4>
             <ul className="space-y-3">
@@ -106,7 +104,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Nossos Serviços</h4>
             <ul className="space-y-3 text-gray-400">
@@ -118,7 +115,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Contato</h4>
             <ul className="space-y-4">
@@ -161,7 +157,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">

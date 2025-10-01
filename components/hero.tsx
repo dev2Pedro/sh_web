@@ -16,7 +16,6 @@ export function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center bg-dark overflow-hidden"
     >
-      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src="/img/sucatinha.png"
@@ -26,7 +25,6 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark/90" />
       </div>
 
-      {/* Content */}
       <div className="container mx-auto px-4 relative z-10 pt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
@@ -59,7 +57,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-2 bg-white/50 rounded-full" />
