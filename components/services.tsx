@@ -31,7 +31,8 @@ export function Services() {
         { icon: Cpu, name: "Eletrônicos" },
         { icon: Armchair, name: "Móveis" },
         { icon: Wind, name: "Ar-condicionado" },
-        { icon: Droplet, name: "Bebedouros" },
+        { icon: Droplet, name: "Cadeiras plásticas" },
+        { icon: Droplet, name: "Mesas plásticas" }, // adicionado
       ],
     },
     {

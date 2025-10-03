@@ -142,7 +142,21 @@ export function Footer() {
                     href="mailto:contato@sucatinhadahora.com.br"
                     className="text-gray-800 hover:text-primary transition-colors break-all"
                   >
-                    contato@sucatinhadahora.com.br
+                    raimundo_nmp@outlook.com
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Instagram className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-400 text-sm mb-1">Instagram</p>
+                  <a
+                    href="https://instagram.com/sucatinhadahora"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-800 hover:text-primary transition-colors"
+                  >
+                    @sucatinhadahora
                   </a>
                 </div>
               </li>
