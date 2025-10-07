@@ -1,4 +1,4 @@
-# 🔧 Suca
+# 🔧 Sucatin
 
 Uma aplicação web moderna desenvolvida com Next.js, apresentando uma landing page responsiva para divulgação de serviços com sistema integrado de contato via e-mail.
 
